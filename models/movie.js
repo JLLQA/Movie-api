@@ -26,7 +26,6 @@ const actorSchema = new SCHEMA({
     age: {
         type: Number,
         min: [1, "Age must be above 1"],
-        max: [120, "Age must be below 120"]
     }
 });
 
@@ -37,6 +36,7 @@ const movieSchema = new SCHEMA({
         minlength: 5
     },
     genre: {
+        type: String,
         enum: [
             "Overcoming the monster",
             "Rags to riches",
